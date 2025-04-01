@@ -1,0 +1,13 @@
+alertmanager:
+  alertmanagerSpec:
+    # Match AlertmanagerConfig by labels (ensures correct alert rules are applied)
+    alertmanagerConfigSelector:
+      matchLabels:
+        release: monitoring
+
+    # Deploy 2 replicas for high availability
+    replicas: 2
+
+    # Disable additional namespace-based matchers
+    alertmanagerConfigMatcherStrategy:
+      type: None

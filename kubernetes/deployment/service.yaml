@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-node-app-service
+  namespace: dev
+  labels:
+    app: my-node-app-service # Add this label
+spec:
+  selector:
+    app: my-node-app
+  ports:
+    - name: my-node-app-service-port
+      protocol: TCP
+      port: 80
+      targetPort: 3001
+  type: LoadBalancer

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-node-app
+  namespace: dev
+  labels:
+    app: my-node-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-node-app
+  template:
+    metadata:
+      labels:
+        app: my-node-app
+    spec:
+      containers:
+        - name: my-node-app
+          image: neeraj7517/observability:final
+          ports:
+            - containerPort: 3001
+          envFrom:
+            - configMapRef:
+                name: my-node-app-config

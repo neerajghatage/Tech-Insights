@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-node-app-config
+  namespace: dev
+data:
+  PORT: "3001"
+  MONGO_URI: "mongodb+srv://customer1:uBbbdUqwC8i7maz8@cluster0.d6jhuar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  MONGO_DB_NAME: "Delievery"
+  MONGO_COLLECTION_NAME: "food_category"
+  OTEL_EXPORTER_JAEGER_ENDPOINT: "http://jaeger-collector.tracing.svc.cluster.local:14268/api/traces"
