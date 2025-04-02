@@ -33,7 +33,7 @@
     client.connect()
         .then(() => {
             db = client.db(process.env.MONGO_DB_NAME);
-            console.log("Connected to th MongoDB Atlas");
+            console.log("Connected to MongoDB Atlas");
         })
         .catch(err => console.error("MongoDB connection error:", err));
 
