@@ -1,14 +1,37 @@
-name: Trigger Jenkins Job on App Changes
+name: Build and Push Docker Image
 
 on:
   push:
     paths:
-      - 'application/**'  # Trigger when any file inside "application" changes
+      - 'application/**' # Trigger only when changes occur in the "application" folder
 
 jobs:
-  trigger-jenkins:
+  build-and-push:
     runs-on: ubuntu-latest
+
+    env:
+      DOCKER_IMAGE: neeraj7517/observability
+      DOCKER_TAG: final
+
     steps:
-      - name: Trigger Jenkins Job
+      # Step 1: Checkout the code from GitHub
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Log in to DockerHub
+      - name: Log in to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # Step 3: Build Docker Image
+      - name: Build Docker Image
         run: |
-          curl -u "admin:11354643ca88a20b99549846c2f52d5c94" -X POST "http://20.5.171.46:8080/job/observability/buildWithParameters?token=testing"
+          docker build -t $DOCKER_IMAGE -f application/Dockerfile application/
+          docker tag $DOCKER_IMAGE $DOCKER_IMAGE:$DOCKER_TAG
+
+      # Step 4: Push Docker Image to DockerHub
+      - name: Push Docker Image
+        run: |
+          docker push $DOCKER_IMAGE:$DOCKER_TAG
