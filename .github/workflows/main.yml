@@ -3,7 +3,7 @@ name: Trigger Jenkins Job on App Changes
 on:
   push:
     paths:
-      - 'application/**' # Trigger only when files in the app folder are modified
+      - 'application/**'  # Trigger when any file inside "application" changes
 
 jobs:
   trigger-jenkins:
@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Trigger Jenkins Job
         run: |
-          curl -X POST "http://20.5.171.46:8080/job/observability/build?token=test"
+          curl -X POST "http://20.5.171.46:8080/job/observability/buildWithParameters?token=test"
