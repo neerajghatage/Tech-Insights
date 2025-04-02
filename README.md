@@ -4,8 +4,6 @@
 
 Debugging complex systems often becomes a bottleneck due to slow, repetitive, and manual processes. These challenges are exacerbated by inconsistent troubleshooting methods, reliance on a few experienced engineers, and outdated logs that lack actionable insights. This project aims to implement a robust observability solution to simplify debugging, enhance visibility into system health, and enable faster issue resolution.
 
----
-
 ## Tech Stack
 
 ### Core Application
@@ -26,8 +24,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - **CI/CD**: GitHub Actions (CI), ArgoCD (CD)
 - **Authentication**: Azure Managed Identity
 
----
-
 ## Flow Diagrams
 - System Architeture
 - ![HLD_Diagram](https://github.com/user-attachments/assets/892d21b6-f638-425b-8d79-b1cbb947b08f)
@@ -39,10 +35,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 
 - Backend:Observabilty
 - ![Backend-Observability](https://github.com/user-attachments/assets/055667ce-3290-417f-ab71-0f10b2952b98)
-
-
-
----
 
 ## Features of the Project
 
@@ -82,8 +74,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
    - Jaeger UI for trace analysis.
    - Kibana dashboards for log exploration.
 
----
-
 ## Limitations and Future Work
 
 1. The current implementation focuses on backend observability; frontend monitoring could be added in the future to improve visibility into user experience.
@@ -91,8 +81,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 3. Machine learning for anomaly detection is not included in this version but could enhance proactive issue detection in the future.
 4. Cost optimization for storage and retention policies needs further refinement to reduce operational expenses without compromising data availability.
 5. Changing observability tools is challenging as it would require significant changes to the source code due to the use of custom metrics specific to the current tools.
-
----
 
 ## Getting Started
 
