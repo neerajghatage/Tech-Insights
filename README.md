@@ -128,19 +128,13 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - Kibana: Explore logs at `<kibana-url>`.
 - Jaeger UI: Analyze traces at `<jaeger-ui-url>`.
 
----
-
 ## Contribution Guidelines
 
 Contributions are welcome to improve this observability implementation further. Please follow the standard pull request process and ensure that any changes include updates to metrics, logs, traces, or alerting configurations as necessary.
 
----
-
 ## License
 
 This project is licensed under the MIT License.
-
----
 
 ## Acknowledgements
 
