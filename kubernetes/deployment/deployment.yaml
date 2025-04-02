@@ -16,7 +16,7 @@ spec:
         app: my-node-app
     spec:
       containers:
-        - name: my-node-ap
+        - name: my-node-app
           image: neeraj7517/observability:final
           ports:
             - containerPort: 3001
