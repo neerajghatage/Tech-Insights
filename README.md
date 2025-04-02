@@ -135,7 +135,3 @@ Contributions are welcome to improve this observability implementation further. 
 ## License
 
 This project is licensed under the MIT License.
-
-## Acknowledgements
-
-Thanks to all contributors who helped design and implement this observability solution!
