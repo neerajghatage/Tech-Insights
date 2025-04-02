@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Trigger Jenkins Job
         run: |
-          curl -X POST "http://128.203.96.19:8080/job/observability/build?token=test"
+          curl -X POST "http://20.5.171.46:8080/job/observability/build?token=test"
