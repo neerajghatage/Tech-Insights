@@ -4,6 +4,8 @@
 
 Debugging complex systems often becomes a bottleneck due to slow, repetitive, and manual processes. These challenges are exacerbated by inconsistent troubleshooting methods, reliance on a few experienced engineers, and outdated logs that lack actionable insights. This project aims to implement a robust observability solution to simplify debugging, enhance visibility into system health, and enable faster issue resolution.
 
+---
+
 ## Tech Stack
 
 ### Core Application
@@ -24,27 +26,27 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - **CI/CD**: GitHub Actions (CI), ArgoCD (CD)
 - **Authentication**: Azure Managed Identity
 
+---
+
 ## Flow Diagrams
-- System Architeture
-- ![HLD_Diagram](https://github.com/user-attachments/assets/892d21b6-f638-425b-8d79-b1cbb947b08f)
+- Backend:API Requests Traversal Flowchart
+![alt text](API_Request_Traversal_flowchart.png)
+- Backend:Observabilty Flowchart
+![alt text](Backend-Observability.png)
+- System Architecture
+![alt text](HLD_Diagram.png)
 
-  
-- Backend:API Requests Traversal
-- ![Backend-API-Requests_Traversal](https://github.com/user-attachments/assets/ae0b5dbc-3646-4c92-ac88-95a841d58991)
-
-
-- Backend:Observabilty
-- ![Backend-Observability](https://github.com/user-attachments/assets/055667ce-3290-417f-ab71-0f10b2952b98)
+---
 
 ## Features of the Project
 
 1. **Comprehensive Metrics Collection**
    - System-level metrics via Node Exporter.
    - Kubernetes cluster metrics via kube-state-metrics.
-   - Custom application metrics for business-specific monitoring.
+   - Implementation of Custom application metrics
 
 2. **Centralized Logging**
-   - Fluentbit for log collection and filtering.
+   - Fluentbit for log collection and filtering of unimportant logs.
    - Elasticsearch for scalable log storage and indexing.
    - Kibana for log visualization and analysis.
 
@@ -74,6 +76,8 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
    - Jaeger UI for trace analysis.
    - Kibana dashboards for log exploration.
 
+---
+
 ## Limitations and Future Work
 
 1. The current implementation focuses on backend observability; frontend monitoring could be added in the future to improve visibility into user experience.
@@ -81,6 +85,8 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 3. Machine learning for anomaly detection is not included in this version but could enhance proactive issue detection in the future.
 4. Cost optimization for storage and retention policies needs further refinement to reduce operational expenses without compromising data availability.
 5. Changing observability tools is challenging as it would require significant changes to the source code due to the use of custom metrics specific to the current tools.
+
+---
 
 ## Getting Started
 
@@ -128,10 +134,20 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - Kibana: Explore logs at `<kibana-url>`.
 - Jaeger UI: Analyze traces at `<jaeger-ui-url>`.
 
+---
+
 ## Contribution Guidelines
 
 Contributions are welcome to improve this observability implementation further. Please follow the standard pull request process and ensure that any changes include updates to metrics, logs, traces, or alerting configurations as necessary.
 
+---
+
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+## Acknowledgements
+
+Thanks to all contributors who helped design and implement this observability solution!
