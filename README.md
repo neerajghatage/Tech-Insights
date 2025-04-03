@@ -28,11 +28,17 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 
 ## Flow Diagrams
 - Backend:API Requests Traversal Flowchart
-![alt text](API_Request_Traversal_flowchart.png)
+
+![API_Request_Traversal_flowchart](https://github.com/user-attachments/assets/6ffea044-098e-4df5-9525-12c49035b0ce)
+
 - Backend:Observabilty Flowchart
-![alt text](Backend-Observability.png)
+
+![Backend-Observability](https://github.com/user-attachments/assets/998a5371-e5e2-4f85-9a0e-c20ed397e6f3)
+
 - System Architecture
-![alt text](HLD_Diagram.png)
+
+![HLD_Diagram](https://github.com/user-attachments/assets/a8f70f6a-a6a1-4d22-969f-6e2be9ed2cfe)
+
 
 
 ## Features of the Project
@@ -129,13 +135,11 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - Kibana: Explore logs at `<kibana-url>`.
 - Jaeger UI: Analyze traces at `<jaeger-ui-url>`.
 
----
 
 ## Contribution Guidelines
 
 Contributions are welcome to improve this observability implementation further. Please follow the standard pull request process and ensure that any changes include updates to metrics, logs, traces, or alerting configurations as necessary.
 
----
 
 ## License
 
