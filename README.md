@@ -22,7 +22,7 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 
 ### Infrastructure & Deployment
 - **Orchestration**: Azure Kubernetes Service (AKS)
-- **CI/CD**: GitHub Actions (CI), ArgoCD (CD) [ArgoCD implementation is currently underway]
+- **CI/CD**: GitHub Actions, ArgoCD  [ArgoCD implementation is currently underway]
 - **Authentication**: Azure Managed Identity
 
 
