@@ -12,7 +12,7 @@
 
     const logging = () => {
         logger.info("Here are thelogs")
-        logger.info("Please have a look in logs ")
+        logger.info("Please have a lookin logs ")
         logger.info("This is just for testing")
     }
   
