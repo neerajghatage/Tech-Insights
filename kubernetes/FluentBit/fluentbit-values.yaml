@@ -221,9 +221,9 @@ config:
         K8S-Logging.Exclude On
 
     [FILTER]
-    Name grep
-    Match kube.*
-    Regex log_level ^(ERROR|WARN)$
+        Name grep
+        Match kube.*
+        Regex level (ERROR|WARN|error|warn)
 
     [FILTER]
         Name lua
