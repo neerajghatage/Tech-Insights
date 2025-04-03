@@ -11,7 +11,7 @@
     const logger = pino();
 
     const logging = () => {
-        logger.info("Here are the logs")
+        logger.info("Here are thelogs")
         logger.info("Please have a look in logs ")
         logger.info("This is just for testing")
     }
