@@ -27,6 +27,11 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 
 
 ## Flow Diagrams
+
+- System Architecture
+
+![HLD_Diagram](https://github.com/user-attachments/assets/a8f70f6a-a6a1-4d22-969f-6e2be9ed2cfe)
+
 - Backend:API Requests Traversal Flowchart
 
 ![API_Request_Traversal_flowchart](https://github.com/user-attachments/assets/6ffea044-098e-4df5-9525-12c49035b0ce)
@@ -34,10 +39,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - Backend:Observabilty Flowchart
 
 ![Backend-Observability](https://github.com/user-attachments/assets/998a5371-e5e2-4f85-9a0e-c20ed397e6f3)
-
-- System Architecture
-
-![HLD_Diagram](https://github.com/user-attachments/assets/a8f70f6a-a6a1-4d22-969f-6e2be9ed2cfe)
 
 
 
