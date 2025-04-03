@@ -4,7 +4,6 @@
 
 Debugging complex systems often becomes a bottleneck due to slow, repetitive, and manual processes. These challenges are exacerbated by inconsistent troubleshooting methods, reliance on a few experienced engineers, and outdated logs that lack actionable insights. This project aims to implement a robust observability solution to simplify debugging, enhance visibility into system health, and enable faster issue resolution.
 
----
 
 ## Tech Stack
 
@@ -26,7 +25,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - **CI/CD**: GitHub Actions (CI), ArgoCD (CD)
 - **Authentication**: Azure Managed Identity
 
----
 
 ## Flow Diagrams
 - Backend:API Requests Traversal Flowchart
@@ -36,7 +34,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - System Architecture
 ![alt text](HLD_Diagram.png)
 
----
 
 ## Features of the Project
 
@@ -76,7 +73,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
    - Jaeger UI for trace analysis.
    - Kibana dashboards for log exploration.
 
----
 
 ## Limitations and Future Work
 
@@ -86,7 +82,6 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 4. Cost optimization for storage and retention policies needs further refinement to reduce operational expenses without compromising data availability.
 5. Changing observability tools is challenging as it would require significant changes to the source code due to the use of custom metrics specific to the current tools.
 
----
 
 ## Getting Started
 
@@ -145,9 +140,3 @@ Contributions are welcome to improve this observability implementation further. 
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-## Acknowledgements
-
-Thanks to all contributors who helped design and implement this observability solution!
