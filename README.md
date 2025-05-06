@@ -136,6 +136,11 @@ Debugging complex systems often becomes a bottleneck due to slow, repetitive, an
 - Kibana: Explore logs at `<kibana-url>`.
 - Jaeger UI: Analyze traces at `<jaeger-ui-url>`.
 
+## Demonstration
+
+📽️ **Demonstration Video**: [Watch the video here](https://drive.google.com/file/d/11Vz3GoP9Uohnp5qNxd1xmfuP6Nh_9dn7/view?usp=drive_link)  
+📄 **Documentation** *(HLD decisions, tradeoffs, known gaps)*: [Read the doc](https://drive.google.com/file/d/1jAPprANOwOXKC0ezIMSHoVfRis0ZnZW9/view?usp=drive_link)
+
 
 ## Contribution Guidelines
 
