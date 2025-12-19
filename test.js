@@ -2,7 +2,6 @@ const axios = require('axios');
 
 // Set the base URL of your Node.js application directly
 const baseUrl = "http://52.234.247.30";
-
 console.log(baseUrl);
 
 // Define an array of endpoints
