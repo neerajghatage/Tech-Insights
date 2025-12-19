@@ -9,7 +9,6 @@
 
     const app = express();
     const logger = pino();
-
     const logging = () => {
         logger.info("Here are thelogs")
         logger.info("Please have a lookin logs ")
